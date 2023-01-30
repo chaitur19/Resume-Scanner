@@ -1,5 +1,4 @@
 docx2txt
-operator
 nltk
 matplotlib
 TextConverter
