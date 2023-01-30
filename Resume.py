@@ -118,25 +118,11 @@ def get_resume_score(text):
     matchPercentage = round(matchPercentage, 2) # round to two decimal
     st.title("Your resume matches about "+ str(matchPercentage)+ "% of the job description.")
 
-uploaded_file = st.file_uploader("Upload a file")
-
-
 if __name__ == '__main__':
-	#extn = input("Enter File Extension: ")
-    #print(extn)
-
-   	# if extn == "pdf":
-    #      resume = read_pdf_resume("C:\Users\GCHAI\Desktop\Srikanth Reddy.docx")
-    #  else:
-    #      resume = read_word_resume("Sri.docx")
-    
-    #resume = read_word_resume(uploaded_file)
-    
-    #job_description = input("\nEnter the Job Description: ")
-
+	uploaded_file = st.file_uploader("Upload a file")
 	if uploaded_file:
 	 file = uploaded_file.name
-	 print(file)
+	 st.write(file)
 
 	 if "pdf" in file:
 	 	resume = read_pdf_resume(file)
