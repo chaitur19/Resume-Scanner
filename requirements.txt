@@ -3,4 +3,5 @@ nltk
 matplotlib
 stopwords
 WordCloud
+pdfminer
 
