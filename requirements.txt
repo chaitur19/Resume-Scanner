@@ -4,4 +4,4 @@ matplotlib
 stopwords
 WordCloud
 pdfminer
-sklearn
+scikit-learn
