@@ -1,0 +1,15 @@
+docx2txt
+re
+operator
+nltk
+matplotlib
+TextConverter
+PDFPageInterpreter
+PDFResourceManager
+PDFPage
+word_tokenize
+stopwords
+WordCloud
+StringIO
+CountVectorizer
+cosine_similarity
