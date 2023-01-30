@@ -1,5 +1,4 @@
 docx2txt
-re
 operator
 nltk
 matplotlib
