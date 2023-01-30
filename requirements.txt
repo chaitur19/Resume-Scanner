@@ -1,11 +1,6 @@
 docx2txt
 nltk
 matplotlib
-TextConverter
-PDFPageInterpreter
-PDFResourceManager
-PDFPage
-word_tokenize
 stopwords
 WordCloud
 StringIO
