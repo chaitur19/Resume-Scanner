@@ -121,7 +121,7 @@ def get_resume_score(text):
 if __name__ == '__main__':
 	uploaded_file = st.file_uploader("Upload a file")
 	if uploaded_file:
-	 file = uploaded_file.path
+	 file = "C:\Users\GCHAI\Desktop\Sri.docx"
 	 st.write(file)
 
 	 if "pdf" in file:
