@@ -125,7 +125,7 @@ if __name__ == '__main__':
 	if uploaded_file is not None:
   	 file = uploaded_file.name
   	 with open(os.path.join("temp",file),"wb") as f:
-		f.write(uploaded_file.getbuffer())
+	  f.write(uploaded_file.getbuffer())
   	 st.success("File Saved")
 
 	 if "pdf" in file:
