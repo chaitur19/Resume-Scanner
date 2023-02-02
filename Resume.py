@@ -1,5 +1,6 @@
 import streamlit as st
 import io
+import os.path
 from pdfminer.converter import TextConverter
 from pdfminer.pdfinterp import PDFPageInterpreter
 from pdfminer.pdfinterp import PDFResourceManager
