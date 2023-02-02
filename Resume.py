@@ -120,27 +120,26 @@ def get_resume_score(text):
 
 uploaded_file = st.file_uploader("Upload a file")
 
-if __name__ == '__main__':
-	
-	if uploaded_file is not None:
-  	 file = uploaded_file.name
-  	 with open(os.path.join("temp",file),"wb") as f:
-	  f.write(uploaded_file.getbuffer())
-  	 st.success("File Saved")
 
-	 if "pdf" in file:
-	 	resume = read_pdf_resume(file)
-	 else:
-	 	resume = read_word_resume(file)
+if uploaded_file is not None:
+  file = uploaded_file.name
+  with open(os.path.join("temp",file),"wb") as f:
+    f.write(uploaded_file.getbuffer())
+  st.success("File Saved")
 
-	job_description = st.text_area("Enter Job description")
+  if "pdf" in file:
+   resume = read_pdf_resume(file)
+  else:
+   resume = read_word_resume(file)
 
-	if st.button("Click"):
+job_description = st.text_area("Enter Job description")
+
+if st.button("Click"):
 	    ## Get a Keywords Cloud
-	 clean_jd = clean_job_decsription(job_description)
-	 create_word_cloud(clean_jd)
+ clean_jd = clean_job_decsription(job_description)
+ create_word_cloud(clean_jd)
 	
-	 text = [resume, job_description]
+ text = [resume, job_description]
 	    
 	    ## Get a Match
-	 resume_score=get_resume_score(text)
+ resume_score=get_resume_score(text)
