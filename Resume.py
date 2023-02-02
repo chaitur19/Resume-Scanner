@@ -124,7 +124,7 @@ uploaded_file = st.file_uploader("Upload a file")
 
 if uploaded_file is not None:
   file = uploaded_file.name
-  with open(os.path.join("Resume-Scanner",file),"wb") as f:
+  with open(os.path.join("/app/resume-scanner",file),"wb") as f:
     f.write(uploaded_file.getbuffer())
   st.success("File Saved")
 
