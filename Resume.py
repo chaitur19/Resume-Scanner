@@ -138,9 +138,9 @@ job_description = st.text_area("Enter Job description")
 if st.button("Click"):
 	    ## Get a Keywords Cloud
  clean_jd = clean_job_decsription(job_description)
- create_word_cloud(clean_jd)
 	
  text = [resume, job_description]
 	    
 	    ## Get a Match
  resume_score=get_resume_score(text)
+ create_word_cloud(clean_jd)
