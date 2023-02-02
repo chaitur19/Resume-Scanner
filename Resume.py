@@ -27,7 +27,7 @@ from io import StringIO
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-st.title("Compare your resume with the job description")
+st.title("Resume Scanner")
 
 
 def read_pdf_resume(pdf_doc):
@@ -126,7 +126,7 @@ if uploaded_file is not None:
   file = uploaded_file.name
   with open(os.path.join("/app/resume-scanner",file),"wb") as f:
     f.write(uploaded_file.getbuffer())
-  st.success("File Saved")
+  st.success("File Uploaded")
 
   if "pdf" in file:
    resume = read_pdf_resume(file)
